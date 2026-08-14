@@ -27,7 +27,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-20'
+modified: '2026-08-13'
 tags:
 - Company
 - Content
@@ -55,8 +55,36 @@ common:
   url: https://publy.co/support/customer-service
 - type: DomainSecurity
   url: security/publy-domain-security.yml
+- type: Pricing
+  url: https://publy.co/free-trial
+- type: SignUp
+  url: https://publy.co/signup
+- type: Plans
+  url: plans/publy-plans-pricing.yml
+- type: LLMsTxt
+  url: llms/publy-llms.txt
 x-enrichment:
-  date: '2026-07-20'
+  date: '2026-08-13'
   status: minimal
-  artifacts_added: 1
+  artifacts_added: 4
   pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    PUBLY ships only a Korean consumer career-membership web/app product — publy.co returns hard
+    404s for /openapi.json, /graphql, /apis.json and every /.well-known/ path, api./docs./developer.
+    subdomains do not resolve at all, and robots.txt exposes only an undocumented internal app
+    backend (Disallow /api/**), so there is no developer program to profile.
+  evidence:
+  - url: https://publy.co/openapi.json
+    status: 404
+  - url: https://publy.co/.well-known/agent-card.json
+    status: 404
+  - url: https://publy.co/.well-known/security.txt
+    status: 404
+  - url: https://publy.co/robots.txt
+    status: 200
+  - url: https://publy.co/free-trial
+    status: 200
+  checked: '2026-08-13'
