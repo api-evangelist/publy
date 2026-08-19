@@ -1,0 +1,66 @@
+# PUBLY (퍼블리)
+
+> PUBLY is a Korean career-development and content membership platform. It sells a subscription
+> Career Membership that gives working professionals curated career content, series, templates and
+> job-transition guides, personalized daily recommendations by career stage, an AI assistant feature
+> (Perdy, beta), and a newsletter. The membership business was acquired by NEWNEEK Co., Ltd. (뉴닉)
+> in June 2024 and continues to operate at publy.co.
+
+<!--
+generated: 2026-08-13
+method: generated
+source: apis.yml + repo artifacts (well-known/, plans/, security/) — publy.co publishes no llms.txt
+  of its own (https://publy.co/llms.txt returns HTTP 404). This file is written and hosted by API
+  Evangelist, not by PUBLY.
+-->
+
+## API surface
+
+PUBLY publishes **no public developer API**. There is no developer portal, no API reference, no
+OpenAPI/AsyncAPI/GraphQL/MCP surface, and no API pricing. This was verified on 2026-08-13:
+
+- `https://publy.co/openapi.json`, `/openapi.yaml`, `/swagger.json`, `/v1/openapi.json`,
+  `/api-docs`, `/docs`, `/redoc`, `/graphql`, `/apis.json` — all HTTP 404
+- every `/.well-known/` path probed (security.txt, openid-configuration,
+  oauth-authorization-server, oauth-protected-resource, api-catalog, ai-plugin.json,
+  agent-card.json, agent.json) — all HTTP 404
+- `api.publy.co`, `docs.publy.co`, `developer.publy.co`, `status.publy.co` — do not resolve
+- no first-party SDK on npm, PyPI, or GitHub; no public Postman workspace
+
+`https://publy.co/robots.txt` declares `Disallow: /api/**`, which indicates the consumer web
+application is backed by a first-party JSON API under that path. It is an internal application
+backend: it is undocumented, unversioned publicly, disallowed to crawlers, and was not probed.
+Agents should treat PUBLY as a human-facing subscription product, not an integrable API.
+
+## Product
+
+- [PUBLY home](https://publy.co): career membership, content library, series and templates (Korean)
+- [Content guides](https://publy.co/guide): curated topic collections
+- [Topics](https://publy.co/topic): browsable subject index
+- [Search](https://publy.co/search)
+- [Assistant](https://publy.co/assistant): AI feature (Perdy, beta)
+
+## Commercial
+
+- [Membership pricing / free trial](https://publy.co/free-trial): 3-month 33,000 KRW,
+  12-month 119,000 KRW, 72-hour free trial with no card charge at signup
+- [Corporate membership and article rental](https://publy.co/business): quote-only, Tally inquiry form
+- [Sign up](https://publy.co/signup) · [Log in](https://publy.co/login)
+
+## Policies and support
+
+- [Terms of service](https://publy.co/terms) (redirects to https://publy.co/content/755)
+- [Privacy policy](https://publy.co/policy) (redirects to https://publy.co/content/756)
+- [Customer service](https://publy.co/support/customer-service)
+
+## Security posture
+
+- TLS 1.3, certificate valid to 2026-11-13; **HSTS not set**
+- SPF and DMARC present (DMARC policy `p=none`); **DNSSEC not enabled; no CAA records**
+- no security.txt, no published vulnerability-disclosure policy, no bug bounty, no trust center
+
+## Provenance
+
+This is a third-party profile maintained by [API Evangelist](https://apievangelist.com) from
+publicly reachable material only. It is not operated or endorsed by PUBLY or NEWNEEK.
+Corrections, re-scores and removal are free: https://github.com/api-evangelist/publy

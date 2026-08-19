@@ -1,0 +1,70 @@
+generated: '2026-08-13'
+method: searched
+source: https://publy.co/free-trial
+also_seen:
+- https://publy.co/business
+- https://publy.co/product?id=2314
+currency: KRW
+scope: consumer-subscription
+api_plans: false
+note: >-
+  IMPORTANT SCOPE NOTE — these are PUBLY's CONSUMER career-membership subscription tiers, not API
+  plans. PUBLY publishes no developer API and therefore no API pricing; this artifact records the
+  commercial surface the company actually publishes so the profile carries real pricing data rather
+  than a blank. Prices are read verbatim from the published Korean pricing page and are inclusive
+  of the promotional discount shown at time of capture (discounts are time-limited and will drift).
+plan_count: 2
+plans:
+- name: 3-month Membership (3개월 멤버십)
+  billing_period: 3 months, prepaid
+  list_price: 38700
+  price: 33000
+  currency: KRW
+  discount: 15% off list
+  effective_monthly: 11000
+  included: Unlimited access to PUBLY career membership content, series, templates and guides
+  overage: null
+  limits: null
+- name: 12-month Membership (12개월 멤버십)
+  billing_period: 12 months, prepaid
+  list_price: 154800
+  price: 119000
+  currency: KRW
+  discount: 23% off list
+  effective_monthly: 9917
+  included: Unlimited access to PUBLY career membership content, series, templates and guides
+  overage: null
+  limits: null
+  bonus: 3-month Canva trial (stated value 42,000 KRW), capped at 150 recipients — promotional, not a standing plan feature
+trial:
+  offered: true
+  length: 72 hours
+  card_required: false
+  terms: >-
+    "지금 결제되지 않으니 안심하세요" — no charge is taken at signup; the member decides after three days.
+  url: https://publy.co/free-trial
+one_time_products:
+- name: Waymark Plus Career Diagnosis (웨이마크 Plus 커리어 진단)
+  price: 39000
+  list_price: 79000
+  currency: KRW
+  billing_period: one-time purchase
+  note: 51% subscriber discount; 230-question assessment with a 60-page report, usable through 2026-12-31.
+  url: https://publy.co/product?id=2314
+enterprise:
+- name: Corporate Membership (기업 멤버십)
+  price: null
+  currency: KRW
+  billing_period: 1 / 3 / 12 months
+  quote_only: true
+  note: >-
+    Per-employee accounts with unlimited content access. No price is published; the B2B page routes
+    to a Tally inquiry form (https://tally.so/r/3jMVL4).
+  url: https://publy.co/business
+- name: Article Rental (아티클 대여)
+  price: null
+  currency: KRW
+  billing_period: 6 or 12 months
+  quote_only: true
+  note: Named content licensed in HTML/PDF form for internal corporate use. No published price.
+  url: https://publy.co/business

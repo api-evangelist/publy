@@ -1,0 +1,27 @@
+generated: '2026-08-13'
+method: searched
+source: >-
+  npm registry search, PyPI, GitHub org/repo search, and the publy.co site itself
+package_count: 0
+packages: []
+note: >-
+  No first-party PUBLY client library exists on any public registry. npm search for "publy"
+  returns a single unrelated package (publy-types-exam); pypi.org/pypi/publy/json returns 404;
+  GitHub has no PUBLY organization for the Korean career-membership company — github.com/Publy-AS
+  is "Publy Digital Signage", a different company entirely, and minr2kb/publy-dinner-worldcup is
+  an employee's personal side project, not an SDK. PUBLY ships consumer apps (Google Play
+  com.publy.publy, iOS App Store id1440756899) rather than developer packages. No SDKs pointer is
+  wired into apis.yml: this file records a searched absence, not a package inventory.
+registries_checked:
+- registry: npm
+  query: publy
+  first_party_hits: 0
+- registry: pypi
+  query: publy
+  first_party_hits: 0
+- registry: github
+  query: publy / publyteam org lookup
+  first_party_hits: 0
+- registry: postman
+  query: publy
+  first_party_hits: 0
