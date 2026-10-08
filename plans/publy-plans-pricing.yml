@@ -68,3 +68,22 @@ enterprise:
   quote_only: true
   note: Named content licensed in HTML/PDF form for internal corporate use. No published price.
   url: https://publy.co/business
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: 3-month Membership (3개월 멤버십)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: 12-month Membership (12개월 멤버십)
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
